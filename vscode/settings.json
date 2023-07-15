@@ -1,0 +1,91 @@
+{
+  //* Workbench
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.enablePreview": false,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "Coder Coder Dark Theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "window.menuBarVisibility": "toggle",
+  "window.autoDetectColorScheme": true,
+
+  //* Files, Explorer & breadcrumbs
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "explorer.compactFolders": true,
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "projectManager.git.baseFolders": ["C:\\Users\\Mehedi\\gitrepo"],
+
+  //* Editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 17,
+  "editor.wordWrap": "on",
+  "editor.cursorStyle": "line",
+  "editor.glyphMargin": false,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.fontLigatures": true,
+  "editor.mouseWheelZoom": true,
+  "editor.formatOnPaste": false,
+  "editor.smoothScrolling": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.detectIndentation": false,
+  "editor.cursorBlinking": "expand",
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  "editor.guides.bracketPairs": true,
+  "editor.wordBasedSuggestions": false,
+  "editor.suggest.localityBonus": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.renderControlCharacters": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "indentRainbow.colorOnWhiteSpaceOnly": true,
+  "editor.accessibilitySupport": "off",
+  "editor.hover.enabled": true,
+  "editor.hover.delay": 1500,
+  "telemetry.telemetryLevel": "all",
+  "explorer.confirmDragAndDrop": false,
+  "vim.enabled": true,
+
+  //* Material Icon Theme
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#6273a6",
+
+  //* Code Spell Checker
+  "cSpell.enabled": true,
+  "cSpell.customDictionaries": {
+    "project-words": {
+      "name": "mh-codewords",
+      "path": "${workspaceRoot}/mh-codewords.txt",
+      "description": "Personal Coding Words",
+      "addWords": true
+    }
+  },
+
+  //* Project Manager
+  "projectManager.vscode.baseFolders": ["C:\\Users\\Mehedi\\gitrepo"],
+
+  // //* Live Sass Compiler
+  // "liveSassCompile.settings.formats": [
+  //   {
+  //     "format": "compressed",
+  //     "extensionName": ".css",
+  //     "savePath": "/dist",
+  //     "savePathReplacementPairs": null
+  //   }
+  // ],
+
+  //* Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.sideBar.location": "right"
+}
