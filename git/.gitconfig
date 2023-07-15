@@ -1,0 +1,24 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Mehedi Hasan
+	email = devbytemehedi@gmail.com
+[alias]
+  cl = clone
+  in = init
+  a = add
+  all = add .
+  cm = commit -m
+  rao = remote add origin
+  puom = push -u origin main
+  b = branch
+  br = branch -m
+  bd = branch -d
+  co = checkout
+  con = checkout -b
+	s = status -s
+  plom = pull origin main
+  psom = push origin main
