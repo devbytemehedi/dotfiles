@@ -7,18 +7,51 @@
 	name = Mehedi Hasan
 	email = devbytemehedi@gmail.com
 [alias]
-  cl = clone
+
+  # Shortcuts
   in = init
+  cl = clone
   a = add
   all = add .
   cm = commit -m
-  rao = remote add origin
-  puom = push -u origin main
-  b = branch
-  br = branch -m
+  br = branch
+  bn = branch -m
   bd = branch -d
   co = checkout
   con = checkout -b
-	s = status -s
+  rao = remote add origin
+  puom = push -u origin main
+  s = status -s
   plom = pull origin main
   psom = push origin main
+
+  # Shows the details of the last commit.
+  last = log -1 HEAD
+
+  # Soft resets the last commit.
+  back = reset --soft HEAD~1
+
+  # Performs a reset that discards changes (delete unstaged changes).
+  hard = reset --hard
+
+  
+  # Advance Aliases
+
+  # add changes & get status.
+  as = !git add -A && git status 
+
+  # add and commit changes.
+  acm = !git add -A && git commit -m 
+
+  # Colored log
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ls = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+
+  # Delete local branches not on remote. Fetch, identify, delete.
+  # gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+
+  # Branches Sort by Last Modified
+  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+  # List Aliases
+  als = "!git config -l | grep alias | cut -c 7-"
