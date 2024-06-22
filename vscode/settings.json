@@ -1,67 +1,113 @@
 {
-  //* Workbench
+  //! Workbench settings
   "workbench.startupEditor": "newUntitledFile",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.labelFormat": "short",
-  "workbench.editor.enablePreview": false,
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Coder Coder Dark Theme",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.empty.hint": "hidden",
   "workbench.layoutControl.enabled": false,
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "top",
+  "workbench.statusBar.visible": true,
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Tokyo Night Storm",
+  // "workbench.preferredLightColorTheme": "ClearView Dark Theme",
+  // "workbench.preferredDarkColorTheme": "Tokyo Night Storm",
+
+  //! Window settings
+  // "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
-  "window.autoDetectColorScheme": true,
 
-  //* Files, Explorer & breadcrumbs
-  "breadcrumbs.enabled": false,
+  //! Explorer settings
   "explorer.confirmDelete": false,
-  "files.autoSave": "afterDelay",
-  "explorer.compactFolders": true,
-  "files.defaultLanguage": "{activeEditorLanguage}",
-  "projectManager.git.baseFolders": ["C:\\Users\\Mehedi\\gitrepo"],
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
 
-  //* Editor
+  //! Files settings
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "files.associations": {"*.css": "tailwindcss"},
+
+  //! Editor settings
   "editor.tabSize": 2,
   "editor.fontSize": 17,
-  "editor.wordWrap": "on",
-  "editor.cursorStyle": "line",
-  "editor.glyphMargin": false,
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.glyphMargin": false,
   "editor.linkedEditing": true,
   "editor.fontLigatures": true,
   "editor.mouseWheelZoom": true,
-  "editor.formatOnPaste": false,
   "editor.smoothScrolling": true,
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "trailing",
   "editor.detectIndentation": false,
   "editor.cursorBlinking": "expand",
-  "editor.snippetSuggestions": "top",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.lineNumbers": "interval",
+  "editor.snippetSuggestions": "bottom",
   "editor.suggestSelection": "first",
-  "editor.guides.bracketPairs": true,
-  "editor.wordBasedSuggestions": false,
+  "editor.guides.bracketPairs": false,
+  "editor.wordBasedSuggestions": "off",
   "editor.suggest.localityBonus": true,
-  "editor.renderLineHighlight": "gutter",
+  "editor.renderLineHighlight": "all",
   "editor.scrollbar.horizontal": "hidden",
   "editor.mouseWheelScrollSensitivity": 2,
   "editor.renderControlCharacters": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.bracketPairColorization.enabled": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "indentRainbow.colorOnWhiteSpaceOnly": true,
   "editor.accessibilitySupport": "off",
   "editor.hover.enabled": true,
   "editor.hover.delay": 1500,
-  "telemetry.telemetryLevel": "all",
-  "explorer.confirmDragAndDrop": false,
-  "vim.enabled": true,
+  "editor.guides.indentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.insertSpaces": true,
+  "editor.inlineSuggest.enabled": true,
+  "breadcrumbs.enabled": false,
+  "editor.fontFamily": "MartianMono Nerd Font Mono",
 
-  //* Material Icon Theme
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.folders.color": "#6273a6",
+  // "editor.fontFamily": "GoMono Nerd Font",
+  // "editor.fontFamily": "JetBrainsMono Nerd Font",
+  // "editor.fontFamily": "Terminess Nerd Font",
+  // "editor.fontFamily": "SpaceMono Nerd Font",
+  // "editor.fontFamily": "OperatorMono Nerd Font",
+  // "editor.fontFamily": "Operator Mono Lig",
 
-  //* Code Spell Checker
+  //! Terminal settings
+  "terminal.integrated.env.windows": {},
+  // "terminal.integrated.cursorStyleInactive": "underline",
+  // "terminal.integrated.cursorBlinking": true,
+  // "terminal.integrated.copyOnSelection": true,
+  // "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // "terminal.integrated.cursorStyle": "underline",
+  // "terminal.integrated.fontFamily": "GoMono Nerd Font",
+
+  //! Git settings
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  //! GitHub Copilot settings
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "typescript": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+
+  //! Code Spell Checker settings
   "cSpell.enabled": true,
   "cSpell.customDictionaries": {
     "project-words": {
@@ -72,20 +118,72 @@
     }
   },
 
-  //* Project Manager
-  "projectManager.vscode.baseFolders": ["C:\\Users\\Mehedi\\gitrepo"],
+  //! Prettier settings
+  "prettier.printWidth": 80,
+  "prettier.bracketSpacing": false,
 
-  // //* Live Sass Compiler
-  // "liveSassCompile.settings.formats": [
-  //   {
-  //     "format": "compressed",
-  //     "extensionName": ".css",
-  //     "savePath": "/dist",
-  //     "savePathReplacementPairs": null
-  //   }
-  // ],
+  //! Material Icon Theme settings
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.color": "#6273a6",
 
-  //* Prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.sideBar.location": "right"
+  //! Security settings
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // !Telemetry settings
+  "telemetry.telemetryLevel": "off",
+
+  //! colorize settings
+  "colorize.include": [".tsx", ".jsx", ".ts", ".js"],
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+
+  //! Directory Tree settings
+  "dirTree.ignore": [
+    "client/node_modules/",
+    "client/.git/",
+    "client/.github/",
+    "client/.eslintrc.json",
+    "client/package-lock.json",
+    "server/node_modules/",
+    "server/.git/",
+    "server/.github/",
+    "server/.eslintrc.json",
+    "server/package-lock.json",
+    ".git/",
+    "node_modules/",
+    ".github/",
+    "/.eslintrc.json",
+    "/package-lock.json"
+  ],
+
+  //! TypeScript settings
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  //! Auto Close Tag settings
+  "auto-close-tag.disableOnLanguage": ["typescript", "typescriptreact"],
+
+  //! Console Ninja settings
+  "console-ninja.featureSet": "Community",
+
+  //! Tailwind CSS Intellisense settings
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "typescriptreact": "typescriptreact"
+  },
+
+  //! Project Manager settings
+  "projectManager.git.baseFolders": ["C:\\Users\\Mehedi\\projects"],
 }
